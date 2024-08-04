@@ -130,7 +130,7 @@ always @(posedge clk or negedge rst_n) begin
         en <= 1'b0;
         we <= 4'd0;
       end else begin 
-        state <= READ_END;
+        state <= READ_RAM;
         en <= 1'b1;
         we <= 4'd0;
         addr <= addr_tmp;
